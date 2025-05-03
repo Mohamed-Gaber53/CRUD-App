@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App - Auth</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- CRUD Header Content -->
+    <header>
+      <div class="container">
+        <h1>CRUD App</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="create-tasks" id="create-tasks">
+          <div class="btns-group">
+            <button id="create" class="create">Create</button>
+            <button id="delete-all" class="delete-all">Clear</button>
+            <button id="search-btn" class="search-btn">Search</button>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search"
+              class="search hidden"
+              placeholder="Search By Name or Category"
+            />
+          </div>
+          <div
+            class="clear-message__container hidden"
+            id="clear-message__container"
+          >
+            <div class="clear-message" id="clear-message">
+              <p id="clear-title">Are You Sure You Want to Delete All?</p>
+              <div class="clear-btns">
+                <button id="clear-yes" class="clear-btn confirm">Yes</button>
+                <button id="clear-no" class="clear-btn cancel">No</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="create-product" class="create-product hidden">
+          <form id="product-form" class="product-form">
+            <div>
+              <input
+                type="text"
+                placeholder="Title"
+                id="product-title"
+                class="product-title"
+              />
+              <input
+                type="text"
+                placeholder="Price"
+                id="product-price"
+                class="product-price"
+              />
+              <input
+                type="text"
+                placeholder="Taxes"
+                id="product-taxes"
+                class="product-taxes"
+              />
+              <input
+                type="text"
+                placeholder="Ads"
+                id="product-ads"
+                class="product-ads"
+              />
+              <input
+                type="text"
+                placeholder="Discount"
+                id="product-discount"
+                class="product-discount"
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                placeholder="Count"
+                id="product-count"
+                class="product-count"
+              />
+              <input
+                type="text"
+                placeholder="Category"
+                id="product-category"
+                class="product-category"
+              />
+            </div>
+
+            <div class="product-form__actions">
+              <button type="submit" id="product-submit" class="product-submit">
+                Add
+              </button>
+              <button type="button" id="product-cancel" class="product-cancel">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="product-table__container">
+          <table class="product-table" id="product-table">
+            <thead>
+              <tr>
+                <th id="col-num">num</th>
+                <th id="col-count">count</th>
+                <th id="col-title">title</th>
+                <th id="col-category">category</th>
+                <th id="col-price">price</th>
+                <th id="col-taxes">taxes</th>
+                <th id="col-ads">ads</th>
+                <th id="col-discount">discount</th>
+                <th id="col-total">total</th>
+                <th id="col-update">update</th>
+                <th id="col-delete">delete</th>
+              </tr>
+            </thead>
+            <tbody id="product-tbody"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
