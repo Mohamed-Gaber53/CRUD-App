@@ -22,7 +22,7 @@ Product Management:
 
 ### Search Results
 
-![Search Results](images/search.png.png)
+![Search Results](images/search.png)
 
 📝 Edit existing products
 
@@ -59,7 +59,7 @@ Modern web browser (Chrome, Firefox, Edge)
 Installation
 Clone the repository:
 
-git clone https://github.com/username/product-management-system.git
+git clone https://github.com/Mohamed-Gaber53/CRUD-App.git
 Open index.html in your browser
 
 🖥 Usage Guide
@@ -95,6 +95,7 @@ project/
 │── style.css # Stylesheet
 │── script.js # Main JavaScript file
 │── README.md # This documentation
+
 🔧 Key Functions
 javascript
 // Core functionality
